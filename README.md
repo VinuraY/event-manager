@@ -23,3 +23,17 @@
   
   
    > There is another option called "Check the current database". It is useful to check how many users are in the database.
+
+## How to use this tool?
+
+   > You have to download several python libraries before using this tool.
+
+      pip install sqlite3
+      pip install pyzbar
+      pip install termcolor
+      pip install opencv-python
+      pip install qrcode
+      
+   > After that just simply execute this main.py file.
+      
+      python main.py
