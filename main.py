@@ -1,3 +1,4 @@
+# Creator : Vinura Yashohara (AnonyMSAV) | Contact : t.me/AnonyMSAV
 # Enrollment application.
 import imghdr
 import os
@@ -7,7 +8,6 @@ import smtplib
 import sqlite3
 import pathlib
 import qrcode
-from email.message import EmailMessage
 import cv2 as cv
 import pyzbar.pyzbar as pyzbar
 import termcolor
@@ -48,9 +48,9 @@ def sender(number, email):
     image.save(path)
 
     # Emailing the generated QR code.
-    sender_email = 'msav4790@gmail.com'
+    sender_email = 'your email address'
     receiver_email = email
-    email_pass = 'gilnhxisusygidad'
+    email_pass = 'Go and generate App password https://myaccount.google.com/security?hl=en_GB and enter it to this space'
 
     with open(path, 'rb') as file:
         img_data = file.read()
