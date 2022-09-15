@@ -8,6 +8,7 @@ import smtplib
 import sqlite3
 import pathlib
 import qrcode
+from email.message import EmailMessage
 import cv2 as cv
 import pyzbar.pyzbar as pyzbar
 import termcolor
@@ -48,9 +49,9 @@ def sender(number, email):
     image.save(path)
 
     # Emailing the generated QR code.
-    sender_email = 'your email address'
+    sender_email = 'Your email address.'
     receiver_email = email
-    email_pass = 'Go and generate App password https://myaccount.google.com/security?hl=en_GB and enter it to this space'
+    email_pass = 'Go and generate App password https://myaccount.google.com/security?hl=en_GB and enter it to this space.'
 
     with open(path, 'rb') as file:
         img_data = file.read()
@@ -259,15 +260,20 @@ def main():
                      termcolor.colored(':', 'yellow') + ' '))
 
         if option == 1:
+
             add_member()
 
         elif option == 2:
+
             check_database()
 
         elif option == 3:
+
             qrcode_reader()
 
         else:
+
+            print(termcolor.colored('\nHappy Hacking!', 'blue'))
             exit()
 
     except ValueError:
