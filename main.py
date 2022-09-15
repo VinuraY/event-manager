@@ -250,7 +250,7 @@ def main():
 | OPTIONS |
 +=========+
 
-{termcolor.colored('{1}. Add new member and send invitaion.','yellow')}
+{termcolor.colored('{1}. Add new member and send invitation.','yellow')}
 {termcolor.colored('{2}. Show current database.','yellow')}
 {termcolor.colored('{3}. Check QR Code validation.','yellow')}''', 'red'))
 
