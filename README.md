@@ -28,7 +28,6 @@
 
    > You have to download several python libraries before using this tool.
 
-      pip install sqlite3
       pip install pyzbar
       pip install termcolor
       pip install opencv-python
